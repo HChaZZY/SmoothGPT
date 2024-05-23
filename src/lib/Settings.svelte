@@ -96,7 +96,7 @@ async function checkAPIConnection() {
   }
 
   try {
-    const response = await fetch('https://api.openai.com/v1/models', {
+    const response = await fetch('https://gptapichat.online/v1/models', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${localApiTextField}`,
@@ -132,7 +132,7 @@ async function fetchModels(apiKey: string) {
   }
 
   try {
-    const response = await fetch('https://api.openai.com/v1/models', {
+    const response = await fetch('https://gptapichat.online/v1/models', {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${apiKey}`,
